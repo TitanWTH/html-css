@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 75px 20px;
+    color: white;
+    background-image: url("network.jpg");
+    background-size: cover;
+    background-position: center 45%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 20, 45, 0.65);
+}
+
+header h1,
+header p {
+    position: relative;
+    text-shadow: 2px 2px 5px black;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #17365d;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2878bd;
+}
+
+/* Main */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #17365d;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2878bd;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #245b8e;
+    margin: 15px 0;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Images */
+
+section img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards */
+
+#cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#cards article {
+    flex: 1;
+    min-width: 220px;
+    padding: 20px;
+    background-color: #f1f6fc;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+}
+
+#cards article:hover {
+    transform: translateY(-5px);
+}
+
+#cards article img {
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #8fcaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    #cards {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
