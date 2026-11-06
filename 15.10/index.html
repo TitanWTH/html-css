@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #007BFF; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-sharp {
+  border-radius: 0px;
+}
+
+.btn-rounded {
+  border-radius: 8px;
+}
+
+.btn-pill {
+  border-radius: 50px;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 0; 
+  line-height: 60px; 
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+</style>
+</head>
+<body>
+
+<h2>Различные формы CSS кнопок</h2>
+
+<button>Кнопка за замовченням</button>
+
+<a href="#" class="button btn-sharp">Острые углы</a>
+
+<button class="button btn-rounded">Скругленная</button>
+
+<input type="button" class="button btn-pill" value="Овальная капсула">
+
+<button class="button btn-circle">Go</button>
+
+</body>
+</html>
